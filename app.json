@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/users/users",
+    "pages/edit/edit",
+    "pages/add/add",
+    "pages/index/index",
+    "pages/renwuinfo/renwuinfo",
+    "pages/uploadCard/uploadCard",
+    "pages/my_info/my_info",
+    "pages/pingjia/pingjia",
+    "pages/renwu/renwu"
+  ],
+  "window": {},
+  "tabBar": {
+    "selectedColor": "#5FB878",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "pages/img/zil.png",
+        "iconPath": "pages/img/zil1.png",
+        "pagePath": "pages/users/users",
+        "text": "名片"
+      },
+      {
+        "selectedIconPath": "pages/img/renwu.png",
+        "iconPath": "pages/img/renwu1.png",
+        "pagePath": "pages/renwu/renwu",
+        "text": "任务"
+      }
+    ]
+  }
+}

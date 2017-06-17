@@ -1,0 +1,26 @@
+<view class="main">
+  <view class="list" bindtap="renwuinfo">
+    <image src="../img/head.jpg"></image>
+    <button class="type">家政服务</button>
+    <text class="name">开乳师,上门服务，服务周到</text>
+    <text class="price">预算：556元/小时</text>
+    <text class="time">时间：08:00-21:00</text>
+    <text class="address">工作地点：西安欧亚学院</text>
+  </view>
+  <view class="list" bindtap="renwuinfo">
+    <image src="../img/head.jpg"></image>
+    <button class="type">家政服务</button>
+    <text class="name">开乳师,上门服务，服务周到</text>
+    <text class="price">预算：556元/小时</text>
+    <text class="time">时间：08:00-21:00</text>
+    <text class="address">工作地点：西安欧亚学院</text>
+  </view>
+  <view class="list" bindtap="renwuinfo">
+    <image src="../img/head.jpg"></image>
+    <button class="type">家政服务</button>
+    <text class="name">开乳师,上门服务，服务周到</text>
+    <text class="price">预算：556元/小时</text>
+    <text class="time">时间：08:00-21:00</text>
+    <text class="address">工作地点：西安欧亚学院</text>
+  </view>
+</view>

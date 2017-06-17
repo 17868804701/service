@@ -1,0 +1,152 @@
+<view class="header">
+  <view class="img_header">
+    <image src="../img/head.jpg"></image>
+  </view>
+  <view class="info">
+    <text class="nickName">不要和我名字一样<text class="sex">♀</text></text>
+    <text class="num">累计35465单</text>
+    <text class="star">星级评价：★★★★★</text>
+  </view>
+  <view class="edit">
+    <view bindtap="index">
+      <image src="../img/edit.png" class="edit_img"></image>
+      <text>编辑资料</text>
+    </view>
+  </view>
+</view>
+<view class="body">
+  <view class="nav bc_white">
+    <view class="{{selected?'red':'default'}} title" bindtap="selected">
+      <view>服务</view>
+    </view>
+    <view class="{{selected1?'red':'default'}} title" bindtap="selected1">
+      <view>评价</view>
+    </view>
+    <view class="{{selected2?'red':'default'}} title" bindtap="selected2">
+      <view>更多</view>
+    </view>
+  </view>
+</view>
+<!--销量排行-->
+<!--profession    职业-->
+<view class="{{selected?'show':'hidden'}}">
+  <view class="profession" bindtap="hidden_edit" bindtap="hidden_edit">
+    <image src="../img/head.jpg" class="profession_img"></image>
+    <text class="profession_name">针灸推拿</text>
+    <image src="../img/more.png" class="more" catchtap="show_edit"></image>
+    <text class="profession_type">家政服务|357.9元</text>
+    <text class="profession_num">累计2536单</text>
+    <text class="profession_add">地址：西安欧亚学院</text>
+    <view class="profession_edit" style="display:{{show}}">
+      <button catchtap="edit">编辑</button>
+      <button catchtap="del">删除</button>
+    </view>
+    <!--<text class="profession_price">￥67.0元</text>-->
+  </view>
+    <view class="profession" bindtap="hidden_edit" bindtap="hidden_edit">
+    <image src="../img/head.jpg" class="profession_img"></image>
+    <text class="profession_name">针灸推拿</text>
+    <image src="../img/more.png" class="more" catchtap="show_edit"></image>
+    <text class="profession_type">家政服务|357.9元</text>
+    <text class="profession_num">累计2536单</text>
+    <text class="profession_add">地址：西安欧亚学院</text>
+    <view class="profession_edit" style="display:{{show}}">
+      <button catchtap="edit">编辑</button>
+      <button catchtap="del">删除</button>
+    </view>
+    <!--<text class="profession_price">￥67.0元</text>-->
+  </view>
+  <view class="add">
+    <image src="../img/add.png" bindtap="add"></image>
+  </view>
+</view>
+<view class="{{selected1?'show':'hidden'}}">
+  <view id="header">
+  <text class="title">家庭保洁</text>
+  <text class="price">550元/小时</text>
+  <text class="num">累计2344单</text>
+</view>
+<view class="list">
+  <text class="assess">评价(1562)</text>
+  <text class="assess_star">★★★★★(5.0)</text>
+</view>
+<view class="main">
+  <view class="content">
+    <view class="content_list">
+      <view class="img">
+        <image src="../img/head.jpg" class="head_img"></image>
+      </view>
+      <text class="user">不要*****一样</text>
+      <text class="time">2016-09-09</text>
+      <text class="star">★★★★★</text>
+      <view class="assess_content">大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。</view>
+      <view class="img_list">
+        <image src="../img/head.jpg"></image>
+        <image src="../img/head.jpg"></image>
+        <image src="../img/head.jpg"></image>
+        <image src="../img/head.jpg"></image>
+        <image src="../img/head.jpg"></image>
+      </view>
+    </view>
+
+        <view class="content_list">
+      <view class="img">
+        <image src="../img/head.jpg" class="head_img"></image>
+      </view>
+      <text class="user">不要*****一样</text>
+      <text class="time">2016-09-09</text>
+      <text class="star">★★★★★</text>
+      <view class="assess_content">大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。</view>
+      <view class="img_list">
+
+      </view>
+    </view>
+
+        <view class="content_list">
+      <view class="img">
+        <image src="../img/head.jpg" class="head_img"></image>
+      </view>
+      <text class="user">不要*****一样</text>
+      <text class="time">2016-09-09</text>
+      <text class="star">★★★★★</text>
+      <view class="assess_content">大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。</view>
+      <view class="img_list">
+        <image src="../img/head.jpg"></image>
+        <image src="../img/head.jpg"></image>
+        <image src="../img/head.jpg"></image>
+        <image src="../img/head.jpg"></image>
+        <image src="../img/head.jpg"></image>
+      </view>
+    </view>
+
+  </view>
+</view>
+</view>
+<view class="{{selected2?'show':'hidden'}}">
+  <view class="more_info">
+    <view class="item">
+      <view class="img">
+        <image src="../img/edit.png"></image>
+      </view>
+      <view class="text">
+        <text>我的订单</text>
+      </view>
+    </view>
+    <view class="item">
+      <view class="img">
+        <image src="../img/edit.png"></image>
+      </view>
+      <view class="text">
+        <text>我的关注</text>
+      </view>
+    </view>
+    <view class="item" bindtap="mySelf">
+      <view class="img">
+        <image src="../img/zil1.png"></image>
+      </view>
+      <view class="text">
+        <text>自我介绍</text>
+      </view>
+    </view>
+  </view>
+</view>

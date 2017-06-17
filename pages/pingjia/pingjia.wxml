@@ -1,0 +1,29 @@
+<view class="header">
+  <text class="title">家庭保洁</text>
+  <text class="price">550元/小时</text>
+  <text class="num">累计2344单</text>
+</view>
+<view class="list">
+  <text class="assess">评价(1562)</text>
+  <text class="assess_star">★★★★★(5.0)</text>
+</view>
+<view class="main">
+  <view class="content">
+    <view class="content_list">
+      <view class="img">
+        <image src="../img/head.jpg" class="head_img"></image>
+      </view>
+      <text class="user">不要*****一样</text>
+      <text class="time">2016-09-09</text>
+      <text class="star">★★★★★</text>
+      <view class="assess_content">大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。</view>
+      <view class="img_list">
+        <image src="../img/head.jpg"></image>
+        <image src="../img/head.jpg"></image>
+        <image src="../img/head.jpg"></image>
+        <image src="../img/head.jpg"></image>
+        <image src="../img/head.jpg"></image>
+      </view>
+    </view>
+  </view>
+</view>

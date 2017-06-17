@@ -1,0 +1,50 @@
+/* pages/add/add.wxss */
+
+page {
+  font-size: 30rpx;
+}
+
+.picker {
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  line-height: 100rpx;
+  height: 100rpx;
+}
+
+.picker text {
+  margin-left: 20rpx;
+    color: #333;
+}
+
+.num {
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  line-height: 100rpx;
+  height: 100rpx;
+}
+
+.num input {
+  border: 0px solid red;
+  width: 80%;
+  height: 80rpx;
+  position: absolute;
+  margin-top: -89rpx;
+  margin-left: 110rpx;
+}
+
+.num text {
+  margin-left: 20rpx;
+  color: #333;
+}
+
+.button button {
+  width: 90%;
+  height: 80rpx;
+  background-color: #5fb878;
+  color: white;
+  font-size: 40rpx;
+  line-height: 80rpx;
+}
+.button{
+  margin-top: 90rpx;
+}

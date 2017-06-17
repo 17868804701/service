@@ -1,0 +1,51 @@
+<view class="head_img">
+  <view class="name">
+    <text>称谓：</text>
+    <input type="text" placeholder="请输入名称" />
+  </view>
+  <view class="sex">
+    <text class="sex_title">性别：</text>
+    <radio-group>
+      <radio value="value" checked="false" style="zoom:60%" />男
+      <radio value="value" checked="false" style="zoom:60%" />女
+    </radio-group>
+  </view>
+  <view class="img">
+    <image src="../img/head.jpg"></image>
+  </view>
+</view>
+<view class="age">
+<text>年龄：</text>
+<input type="number" class="age_input" placeholder="请输入年龄" maxlength="2"/>
+</view>
+<view class="renzheng" bindtap="uploadCard">
+  <text class="title">实名认证：</text>
+  <text>未认证</text>
+  <view class="ljrz">立即认证</view>
+</view>
+
+<view class="worrktime">
+  <view class="timeStart">
+    <picker mode="date" value="{{date}}" start="1990-09-01" end="3017-09-01" bindchange="bindDateChange">
+      <view class="picker">
+        从业时间：{{date}}
+      </view>
+    </picker>
+  </view>
+  <!--<view class="timeEnd">
+    <picker mode="date" value="{{date1}}" start="1990-09-01" end="3017-09-01" bindchange="bindDateChange1">
+      <view class="picker">
+        至
+        <text class="data1">{{date1}}</text>
+      </view>
+    </picker>
+  </view>-->
+</view>
+
+<!--<view class="my" bindtap="my_info">
+  <text class="my_info">自我介绍</text>
+  <text class="right_icon">></text>
+</view>-->
+  <view class="add">
+    <button bindtap="baocun">保存</button>
+  </view>

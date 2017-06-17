@@ -1,0 +1,29 @@
+<view class="main">
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        <text>选择职业：</text>{{array[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="num">
+    <text>项目：</text>
+    <input type="text" placeholder="请输入项目名词，如：婚庆跟妆、开乳"  />
+  </view>
+  <view class="num">
+    <text>数量：</text>
+    <input type="text" placeholder="请输入数量"  />
+  </view>
+    <view class="num">
+    <text>单位：</text>
+    <input type="text" placeholder="请输入单位，如：天、小时"  />
+  </view>
+  <view class="num">
+    <text>价格：</text>
+    <input type="text" placeholder="请输入价格"  />
+  </view>
+
+  <view class="button">
+  <button bindtap="ok">保存</button>
+  </view>
+</view>
