@@ -7,7 +7,7 @@ page {
 
 .header {
   width: 85%;
-  height: 470rpx;
+  height: 430rpx;
   margin-left: 7.5%;
   background-color: white;
   margin-bottom: 35rpx;
@@ -17,7 +17,6 @@ page {
                 /*左边阴影*/ 10px 0 10px #eee,
                 /*右边阴影*/ 0 -10px 10px #eee,
                 /*顶部阴影*/ 0 10px 10px #eee;
-  /*border-bottom: 1px solid gainsboro;*/
 }
 
 .img_header image {
@@ -30,18 +29,6 @@ page {
 .img_header {
   display: flex;
   justify-content: center;
-}
-
-.classname {
-  border: 1px solid #eee;
-  width: 85%;
-  margin-left: 7.5%;
-  border-radius: 0 0 20rpx 20rpx;
-  box-shadow: -10px 0 10px #eee,
-                /*左边阴影*/ 10px 0 10px #eee,
-                /*右边阴影*/ 0 -10px 10px #eee,
-                /*顶部阴影*/ 0 10px 10px #eee;
-  padding-bottom: 25rpx;
 }
 
 .edit {
@@ -177,6 +164,7 @@ page {
   height: 160rpx;
   background-color: white;
   border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .profession_img {
@@ -241,12 +229,11 @@ page {
   width: 110rpx;
   height: 60rpx;
   font-size: 20rpx;
-  color: #5fb878;
+  color: white;
   text-align: center;
-  border: 1px solid #5fb878;
   line-height: 60rpx;
-  margin-top: 15rpx;
-  background-color: white;
+  margin-top: 20rpx;
+  background-color: #5fb878;
 }
 
 .add {
@@ -322,6 +309,7 @@ page {
   height: 120rpx;
   background-color: white;
   border-top: 1px solid #eee;
+   border-bottom: 1px solid #eee;
 }
 
 #header .title {
@@ -351,7 +339,6 @@ page {
   margin-top: 1rpx;
   line-height: 100rpx;
   border-bottom: 1px solid #eee;
-   border-top: 1px solid #eee;
 }
 
 .assess {
@@ -411,7 +398,7 @@ page {
   width: 100%;
   height: auto;
   margin-bottom: 1px;
-  border-bottom:5px solid #eee; 
+  border-bottom:4px solid #eee; 
 }
 
 .img_list {
@@ -422,34 +409,4 @@ page {
   width: 30%;
   height: 220rpx;
   margin-left: 2.5%;
-}
-
-/*介绍*/
-
-.introduce{
-  height: 200rpx;
-  border-top: 1px solid #eee;
-}
-.me{
-  width: 100%;
-  height: 300rpx;
-  border: 0px solid red;
-  text-align: center;
-}
-.me image{
-  width: 160rpx;
-  height: 160rpx;
-  margin-top: 40rpx;
-}
-.me text{
-  color: #888;
-}
-.me button{
-  width: 80%;
-  margin-left: 10%;
-  background-color: #5fb878;
-  margin-top: 60rpx;
-  height: 80rpx;
-  line-height: 80rpx;
-  color: white;
 }

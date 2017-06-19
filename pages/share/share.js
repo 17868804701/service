@@ -38,16 +38,11 @@ Page({
       selected3: true
     })
   },
-  index: function () {
-    wx.navigateTo({
-      url: '../index/index?sex='+this.data.gender+'&nickName='+this.data.nickName,
-    })
-  },
-  share:function(){
-    wx.navigateTo({
-      url: '../share/share',
-    })
-  },
+  // index: function () {
+  //   wx.navigateTo({
+  //     url: '../index/index?sex=' + this.data.gender + '&nickName=' + this.data.nickName,
+  //   })
+  // },
   baocun: function () {
     wx.showToast({
       title: '保存成功',
@@ -95,7 +90,7 @@ Page({
       }
     })
   },
-  my_info: function () {
+  mySelf: function () {
     wx.navigateTo({
       url: '../my_info/my_info',
     })
@@ -135,5 +130,18 @@ Page({
         }
       }
     })
+  },
+  onShareAppMessage: function (res) {
+    return {
+      title: '个人名片',
+      path: '/pages/share/share',
+      success: function (res) {
+        // 转发成功
+        console.log("转发成功")
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
   }
 })

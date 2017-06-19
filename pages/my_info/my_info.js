@@ -1,6 +1,6 @@
 Page({
   data: {
-    files: []
+    files: [],
   },
   chooseImage: function (e) {
     var that = this;

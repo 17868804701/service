@@ -1,22 +1,31 @@
 <view class="head_img">
   <view class="name">
     <text>称谓：</text>
-    <input type="text" placeholder="请输入名称" />
+    <input type="text" placeholder="请输入名称" value='{{nickName}}' />
   </view>
   <view class="sex">
     <text class="sex_title">性别：</text>
     <radio-group>
-      <radio value="value" checked="false" style="zoom:60%" />男
-      <radio value="value" checked="false" style="zoom:60%" />女
+      <radio value="value" checked="{{checked}}" style="zoom:60%" />男
+      <radio value="value" checked="{{checked1}}" style="zoom:60%" />女
     </radio-group>
   </view>
   <view class="img">
     <image src="../img/head.jpg"></image>
   </view>
 </view>
+<view class="birthday">
+  <view class="timeStart">
+    <picker mode="date" value="{{date}}" start="1990-09-01" end="3017-09-01" bindchange="bindDateChange1">
+      <view class="picker">
+        生日：{{date1}}
+      </view>
+    </picker>
+  </view>
+</view>
 <view class="age">
 <text>年龄：</text>
-<input type="number" class="age_input" placeholder="请输入年龄" maxlength="2"/>
+<input type="number" class="age_input" placeholder="请输入年龄" maxlength="2" value='{{age}}' disabled='true'/>
 </view>
 <view class="renzheng" bindtap="uploadCard">
   <text class="title">实名认证：</text>

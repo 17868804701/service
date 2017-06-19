@@ -5,8 +5,8 @@ Page({
    */
   data: {
     index: 0,
-    date: '1900-09-01',
-    date1: '1900-09-01',
+    date: '1980-09-01',
+    date1: '1980-09-01',
     time: '12:01'
   },
 
@@ -14,7 +14,33 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var sex = options.sex;
+    var nickName = options.nickName
+    if (sex == '男') {
+      this.setData({
+        checked: true
+      })
+    } else if (sex == '女') {
+      this.setData({
+        checked1: true
+      })
+    }
+    this.setData({
+      nickName: nickName
+    })
+    //根据生日算出年龄
+    var bth = this.data.date1;
+    console.log(bth);
+    var str = bth.substring(0, 4);
+    var birthday = parseInt(str);
+    console.log(birthday);
+    var date = new Date;
+    var year = date.getFullYear();
+    console.log(year);
+    var age = parseInt(year) - birthday;
+    this.setData({
+      age: age
+    })
   },
 
   /**
@@ -63,7 +89,11 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: '微信小程序联盟',
+      desc: '最具人气的小程序开发联盟!',
+      path: '/page/user?id=123'
+    }
   },
   my_info: function () {
     wx.navigateTo({
@@ -93,6 +123,19 @@ Page({
   bindDateChange1: function (e) {
     this.setData({
       date1: e.detail.value
+    })
+    //根据生日算出年龄
+    var bth = this.data.date1;
+    console.log(bth);
+    var str = bth.substring(0, 4);
+    var birthday = parseInt(str);
+    console.log(birthday);
+    var date = new Date;
+    var year = date.getFullYear();
+    console.log(year);
+    var age = parseInt(year) - birthday;
+    this.setData({
+      age: age
     })
   }
 })
