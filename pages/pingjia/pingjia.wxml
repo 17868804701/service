@@ -1,0 +1,44 @@
+<view class="header">
+<text class="pingjia">星级评价</text>
+<text class="star5" bindtap="click_5" style="margin-right:30rpx;">{{star5}}</text>
+<text class="star4" bindtap="click_4" style="margin-right:5rpx;">{{star4}}</text>
+<text class="star3" bindtap="click_3" style="margin-right:5rpx;">{{star3}}</text>
+<text class="star2" bindtap="click_2" style="margin-right:5rpx;">{{star2}}</text>
+<text class="star1" bindtap="click_1" style="margin-right:5rpx;">{{star1}}</text>
+<!--☆-->
+</view>
+<view class="page" style="margin-top:-40rpx;">
+  <view class="page__bd">
+    <view class="weui-cells">
+      < view class="weui-cell">
+        <view class="weui-cell__bd">
+          <view class="weui-uploader">
+            <view class="weui-uploader__hd">
+              <textarea class="info" placeholder="此刻想说的" placeholder-style="font-size:30rpx;" maxlength="300" />
+            </view>
+            < view class="weui-uploader__bd">
+              <view class="weui-uploader__files" id="uploaderFiles">
+                <block wx:for="{{files}}" wx: key="*this">
+                  <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                    <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                  </view>
+                </block>
+              </view>
+              <view class="weui-uploader__input-box">
+                <view class="weui-uploader__input" bindtap="chooseImage"> </view>
+              </view>
+          </view>
+        </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+<view class="main">
+  <button class="tijiao" bindtap="click_1">提交</button>
+</view>
+</view>
+</view>
