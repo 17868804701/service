@@ -16,15 +16,26 @@ Page({
     autoplay: true,
     interval: 5000,
     duration: 1000,
-    userInfo: {}
+    userInfo: {},
+    tel:'178****4701'
   },
   onLoad: function () {
     console.log('onLoad test');
   },
   showTel:function(){
+    var that =this; 
     wx.showModal({
       title: '查看',
       content: '你还没有下单付费，不能查看，立即下单',
+      success: function (res) {
+        if (res.confirm) {
+          that.setData({
+            tel:'17868804701'
+          })
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
     })
   }
 })  

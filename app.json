@@ -1,16 +1,16 @@
 {
   "pages": [
     "pages/users/users",
+    "pages/pingjia/pingjia",
+    "pages/renwu/renwu",
+    "pages/index/index",  
     "pages/index1/index1",
     "pages/share/share",
     "pages/edit/edit",
     "pages/add/add",
-    "pages/index/index",  
     "pages/renwuinfo/renwuinfo",
     "pages/uploadCard/uploadCard",
-    "pages/my_info/my_info",
-    "pages/pingjia/pingjia",
-    "pages/renwu/renwu"
+    "pages/my_info/my_info"
   ],
   "window": {},
   "tabBar": {

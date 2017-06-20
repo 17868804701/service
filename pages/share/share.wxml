@@ -53,14 +53,14 @@
 </view>
 <view class="{{selected1?'show':'hidden'}}">
   <view id="header">
-  <text class="title">家庭保洁</text>
+  <!--<text class="title">家庭保洁</text>
   <text class="price">550元/小时</text>
-  <text class="num">累计2344单</text>
+  <text class="num">累计2344单</text>-->
 </view>
-<view class="list">
+<!--<view class="list">
   <text class="assess">评价(1562)</text>
   <text class="assess_star">★★★★★(5.0)</text>
-</view>
+</view>-->
 <view class="main">
   <view class="content">
 
@@ -116,6 +116,16 @@
 </view>
 </view>
 <view class="{{selected2?'show':'hidden'}}">
+  <!--introduce   介绍-->
+  <view class="introduce">
+    <view class="me">
+      <image src="../img/iconfont-mingpian.png"></image>
+      <view class="zwjs">
+        <text>本人很懒，还没有自我介绍</text>
+      </view>
+      <!--<button bindtap="my_info">前往编辑</button>-->
+    </view>
+  </view>
   <!--<view class="more_info">
     <view class="item">
       <view class="img">

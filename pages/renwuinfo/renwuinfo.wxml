@@ -51,7 +51,7 @@
 </view>
 
 <view class="tel">
-  <text class="tel_num">联系方式：178****4701</text>
+  <text class="tel_num">联系方式：{{tel}}</text>
   <text class="show_tel" bindtap="showTel">查看</text>
 </view>
 <view class="button">

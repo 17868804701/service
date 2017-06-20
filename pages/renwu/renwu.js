@@ -67,5 +67,20 @@ Page({
     wx.navigateTo({
       url: '../renwuinfo/renwuinfo',
     })
+  },
+  ljqd:function(){
+    wx.showModal({
+      title: '确认下单',
+      content: '确认使用微信支付吗？',
+      success: function (res) {
+        if (res.confirm) {
+          wx.navigateTo({
+            url: '../renwuinfo/renwuinfo',
+          })
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
   }
 })

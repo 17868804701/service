@@ -306,10 +306,9 @@ page {
 
 #header {
   width: 100%;
-  height: 120rpx;
+  height: 1rpx;
   background-color: white;
   border-top: 1px solid #eee;
-   border-bottom: 1px solid #eee;
 }
 
 #header .title {
@@ -323,7 +322,7 @@ page {
   position: absolute;
   margin-left: 30rpx;
   margin-top: 70rpx;
-}
+}s
 
 #header .num {
   float: right;
@@ -331,7 +330,7 @@ page {
   margin-right: 20rpx;
   color: #888;
 }
-
+s
 .list {
   height: 100rpx;
   width: 100%;
@@ -409,4 +408,32 @@ page {
   width: 30%;
   height: 220rpx;
   margin-left: 2.5%;
+}
+/*介绍*/
+.introduce{
+  height: 200rpx;
+  border-top: 1px solid #eee;
+}
+.me{
+  width: 100%;
+  height: 300rpx;
+  border: 0px solid red;
+  text-align: center;
+}
+.me image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-top: 40rpx;
+}
+.me text{
+  color: #888;
+}
+.me button{
+  width: 80%;
+  margin-left: 10%;
+  background-color: #5fb878;
+  margin-top: 60rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: white;
 }

@@ -21,13 +21,23 @@ page {
   padding-left: 20rpx;
   margin-top: 20rpx;
 }
-
+.bth{
+  color: #888;
+}
+.wrz{
+  color: #888;
+  margin-left: 20rpx;
+}
+.cysj{
+  color: #888;
+}
 .name input {
   width: 80%;
   border: 0px solid gainsboro;
   height: 65rpx;
   margin-left: 80rpx;
   border-radius: 5px;
+  color: #888;
 }
 
 .name text {
@@ -130,6 +140,7 @@ page {
   line-height: 40rpx;
   padding-bottom: 5rpx;
   font-size: 20rpx;
+  color: #888;
 }
 
 .my {
@@ -214,7 +225,7 @@ page {
   background-color: #5fb878;
   line-height: 80rpx;
   color: white;
-  font-size: 40rpx;
+  font-size: 30rpx;
   margin-top: 80rpx;
   margin-left: 5%;
 }
