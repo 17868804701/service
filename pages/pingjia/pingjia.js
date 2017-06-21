@@ -11,6 +11,7 @@ Page({
     star3: '★',
     star4: '★',
     star5: '★',
+    str:'非常好'
   
   },
 
@@ -97,10 +98,12 @@ Page({
         star4: '☆',
         star3: '☆',
         star2: '☆',
+        str:'非常差'
       })
     } else {
       this.setData({
         star1: '★',
+        str: '非常差'
       })
     }
   },
@@ -111,12 +114,14 @@ Page({
         star5: '☆',
         star4: '☆',
         star3: '☆',
+        str:'差'
 
       })
     } else {
       this.setData({
         star1: '★',
         star2: '★',
+        str: '差'
       })
     }
   },
@@ -126,12 +131,14 @@ Page({
       this.setData({
         star5: '☆',
         star4: '☆',
+        str:'一般'
       })
     } else {
       this.setData({
         star1: '★',
         star2: '★',
         star3: '★',
+        str: '一般'
       })
     }
   },
@@ -140,6 +147,7 @@ Page({
     if (this.data.star4 == '★') {
       this.setData({
         star5: '☆',
+        str:'好'
       })
     } else {
       this.setData({
@@ -147,6 +155,7 @@ Page({
         star2: '★',
         star3: '★',
         star4: '★',
+        str: '好'
       })
     }
   },
@@ -158,6 +167,7 @@ Page({
       star3: '★',
       star4: '★',
       star5: '★',
+      str:'非常好'
     })
   }
 })

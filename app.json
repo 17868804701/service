@@ -1,11 +1,12 @@
 {
   "pages": [
     "pages/users/users",
+    "pages/buyInfo/buyInfo",
     "pages/pingjia/pingjia",
-    "pages/renwu/renwu",
-    "pages/index/index",  
-    "pages/index1/index1",
     "pages/share/share",
+    "pages/index/index",  
+    "pages/renwu/renwu",
+    "pages/index1/index1",
     "pages/edit/edit",
     "pages/add/add",
     "pages/renwuinfo/renwuinfo",

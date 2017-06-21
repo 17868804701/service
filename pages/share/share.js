@@ -4,7 +4,9 @@ Page({
     selected: true,
     selected1: false,
     hidden: false,
-    show: 'none'
+    show: 'none',
+    zan_url: '../img/xihuanshi.png',
+    zan_num: '109'
   },
   selected: function (e) {
     this.setData({
@@ -38,11 +40,6 @@ Page({
       selected3: true
     })
   },
-  // index: function () {
-  //   wx.navigateTo({
-  //     url: '../index/index?sex=' + this.data.gender + '&nickName=' + this.data.nickName,
-  //   })
-  // },
   baocun: function () {
     wx.showToast({
       title: '保存成功',
@@ -95,7 +92,17 @@ Page({
       url: '../my_info/my_info',
     })
   },
-  onLoad: function () {
+  onLoad: function (options) {
+    var pingjia = options.pingjia;
+    console.log(pingjia)
+    if(pingjia=='pingjia'){
+       this.setData({
+         show:''
+       })
+    }
+    this.setData({
+      zan_num: parseInt(this.data.zan_num) + 1
+    })
     var that = this;
     wx.login({
       success: function (res) {
@@ -143,5 +150,31 @@ Page({
         // 转发失败
       }
     }
+  },
+  buy:function(){
+    wx.redirectTo({
+      url: '../buyInfo/buyInfo',
+    })
+  },
+  pingjia:function(){
+    wx.navigateTo({
+      url: '../pingjia/pingjia',
+    })
+  },
+  uploadCard: function () {
+    wx.navigateTo({
+      url: '../uploadCard/uploadCard',
+    })
+  },
+  call:function(){
+    wx.makePhoneCall({
+      phoneNumber: '17868804701', //此号码并非真实电话号码，仅用于测试
+      success: function () {
+        console.log("拨打电话成功！")
+      },
+      fail: function () {
+        console.log("拨打电话失败！")
+      }
+    })
   }
 })

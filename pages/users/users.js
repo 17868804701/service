@@ -4,7 +4,9 @@ Page({
     selected: true,
     selected1: false,
     hidden: false,
-    show: 'none'
+    show: 'none',
+    zan_url:'../img/xihuanshi.png',
+    zan_num:'109'
   },
   selected: function (e) {
     this.setData({
@@ -44,7 +46,7 @@ Page({
     })
   },
   share:function(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../share/share',
     })
   },
@@ -101,6 +103,9 @@ Page({
     })
   },
   onLoad: function () {
+    this.setData({
+      zan_num: parseInt(this.data.zan_num)+1
+    })
     var that = this;
     wx.login({
       success: function (res) {
@@ -134,6 +139,11 @@ Page({
           console.log('获取用户登录态失败！' + res.errMsg)
         }
       }
+    })
+  },
+  uploadCard:function(){
+    wx.navigateTo({
+      url: '../uploadCard/uploadCard',
     })
   }
 })

@@ -1,7 +1,8 @@
 <view class="header">
-
+ <image src="{{zan_url}}" class="zan" bindtap="zan"></image><text class="zan_num">{{zan_num}}</text>
   <view class="img_header">
-    <image src="{{avatarUrl}}"></image>
+    <image src="{{avatarUrl}}" id="head_img"></image>
+    <image src="../img/hvz.png" class="rz_img" bindtap="uploadCard"></image>
   </view>
   <view class="info">
     <text class="nickName">{{nickName}}<text class="sex" wx:if="{{gender=='男'}}">♀</text><text class="sex_nv" wx:if="{{gender=='女'}}">♂</text>
@@ -18,7 +19,6 @@
       <image src="../img/eyes.png" class="edit_img"></image>
       <text>预览分享</text>
     </view>
-
   </view>
 </view>
 <view class="body">
@@ -66,7 +66,6 @@
   <view class="add">
     <image src="../img/add.png" bindtap="add"></image>
   </view>
-  <view style="width:100%;height:80rpx;"></view>
 </view>
 <view class="{{selected1?'show':'hidden'}}">
   <view id="header">
@@ -131,7 +130,6 @@
 
     </view>
   </view>
-  <view style="width:100%;height:80rpx;"></view>
 </view>
 <view class="{{selected2?'show':'hidden'}}">
   <!--introduce   介绍-->
@@ -144,20 +142,4 @@
       <button bindtap="my_info">前往编辑</button>
     </view>
   </view>
-  <view style="width:100%;height:80rpx;"></view>
-</view>
-<view class="footer">
-  <view class="call">
-  <image src="../img/call.png" id="call"></image>
-  <text>打电话</text>
-  </view>
-  <view class="pingjia">
- <image src="../img/aa.png" id="call"></image>
-  <text>评价&结算</text>
-  </view>
-   <view class="tousu">
- <image src="../img/tousu.png" id="call"></image>
-  <text>投诉</text>
-  </view>
-   
 </view>

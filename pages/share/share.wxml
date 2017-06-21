@@ -1,7 +1,8 @@
 <view class="header">
-
+<image src="{{zan_url}}" class="zan" bindtap="zan"></image><text class="zan_num">{{zan_num}}</text>
   <view class="img_header">
-    <image src="{{avatarUrl}}"></image>
+    <image src="{{avatarUrl}}" id="head_img"></image>
+    <image src="../img/hvz.png" class="rz_img" bindtap="uploadCard"></image>
   </view>
   <view class="info">
     <text class="nickName">{{nickName}}<text class="sex" wx:if="{{gender=='男'}}">♀</text><text class="sex_nv" wx:if="{{gender=='女'}}">♂</text></text>
@@ -44,7 +45,7 @@
     <text class="profession_num">累计2536单</text>
     <text class="profession_add">地址：西安欧亚学院</text>
     <view class="profession_edit">
-      <button>购买</button>
+      <button bindtap="buy">购买</button>
     </view>
   </view>
   <!--<view class="add">
@@ -111,7 +112,6 @@
         <image src="../img/head.jpg"></image>
       </view>
     </view>
-
   </view>
 </view>
 </view>
@@ -126,30 +126,18 @@
       <!--<button bindtap="my_info">前往编辑</button>-->
     </view>
   </view>
-  <!--<view class="more_info">
-    <view class="item">
-      <view class="img">
-        <image src="../img/edit.png"></image>
-      </view>
-      <view class="text">
-        <text>我的订单</text>
-      </view>
-    </view>
-    <view class="item">
-      <view class="img">
-        <image src="../img/edit.png"></image>
-      </view>
-      <view class="text">
-        <text>我的关注</text>
-      </view>
-    </view>
-    <view class="item" bindtap="mySelf">
-      <view class="img">
-        <image src="../img/zil1.png"></image>
-      </view>
-      <view class="text">
-        <text>自我介绍</text>
-      </view>
-    </view>
-  </view>-->
+</view>
+<view class="footer" style="display:{{show}}">
+  <view class="call" bindtap="call">
+  <image src="../img/call.png" id="call"></image>
+
+  </view>
+  <view class="pingjia" bindtap="pingjia">
+ <image src="../img/aa.png" id="call"></image>
+
+  </view>
+   <view class="tousu">
+ <image src="../img/tousu.png" id="call"></image>
+
+  </view>
 </view>

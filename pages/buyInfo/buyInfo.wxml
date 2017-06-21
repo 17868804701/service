@@ -1,0 +1,41 @@
+<!--pages/buyInfo/buyInfo.wxml-->
+<view class="main">
+  <view class="list">
+    <text class="tittle">联系人姓名</text>
+    <text class="tip">(*必填)</text>
+  </view>
+  <input type="text" placeholder="填写联系人姓名" placeholder-style="font-size:30rpx;" />
+  <view class="list">
+    <text class="tittle">联系人手机号</text>
+    <text class="tip">(*必填)</text>
+  </view>
+  <input type="text" placeholder="填写联系人电话" placeholder-style="font-size:30rpx;" />
+  <view class="list">
+    <text class="tittle">预约时间</text>
+    <text class="tip">(*必填)</text>
+  </view>
+  <view class="section">
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+      <view class="picker">
+        <text class="picker_tip">当前选择</text>
+        <text class="picker_date">{{date}}</text>
+      </view>
+    </picker>
+    <picker class="time" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+      <view class="picker">
+        <text class="picker_date">{{time}}</text>
+      </view>
+    </picker>
+  </view>
+  <view class="list">
+    <text class="tittle">联系人地址</text>
+    <text class="tip"></text>
+  </view>
+  <input type="text" placeholder="填写联系人地址" placeholder-style="font-size:30rpx;" />
+    <view class="list">
+    <text class="tittle">备注</text>
+    <text class="tip"></text>
+  </view>
+  <textarea style="text" placeholder="请填写备注" placeholder-style="font-size:30rpx;" class="remark" />
+  <view class="button" bindtap="pingjia">提交</view>
+</view>

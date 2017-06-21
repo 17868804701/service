@@ -7,7 +7,7 @@
     <text class="sex_title">性别</text>
     <radio-group>
       <radio value="value" checked="{{checked}}" style="zoom:60%" />男
-      <radio value="value" checked="{{checked1}}" style="zoom:60%" />女
+      <radio value="value" checked="{{checked1}}" style="zoom:60%"/>女
     </radio-group>
   </view>
   <view class="img">
@@ -23,16 +23,15 @@
     </picker>
   </view>
 </view>
-<!--<view class="age">
-  <text>年龄：</text>
-  <input type="number" class="age_input" placeholder="请输入年龄" maxlength="2" value='{{age}}' disabled='true' />
-</view>-->
+<view class="age">
+  <text>地址</text>
+  <input type="number" class="age_input" placeholder="请输入地址"/>
+</view>
 <view class="renzheng" bindtap="uploadCard">
   <text class="title">实名认证</text>
   <text class="wrz">未认证</text>
   <view class="ljrz">立即认证</view>
 </view>
-
 <view class="worrktime">
   <view class="timeStart">
     <picker mode="date" value="{{date}}" start="1990-09-01" end="3017-09-01" bindchange="bindDateChange">
@@ -41,16 +40,7 @@
       </view>
     </picker>
   </view>
-  <!--<view class="timeEnd">
-    <picker mode="date" value="{{date1}}" start="1990-09-01" end="3017-09-01" bindchange="bindDateChange1">
-      <view class="picker">
-        至
-        <text class="data1">{{date1}}</text>
-      </view>
-    </picker>
-  </view>-->
 </view>
-
 <view class="my">
   <text class="my_info">是否接单</text>
   <switch type="switch" checked="true" bindchange="listenerSwitch" style="float:right" />

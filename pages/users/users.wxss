@@ -4,7 +4,21 @@ page {
   background-color: white;
   font-size: 30rpx;
 }
-
+.zan{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 23%;
+  margin-top: 64rpx;
+  position: absolute;
+}
+.zan_num{
+    width: 50rpx;
+  height: 50rpx;
+  margin-left: 29%;
+  color: #888;
+  margin-top: 65rpx;
+  position: absolute;
+}
 .header {
   width: 85%;
   height: 470rpx;
@@ -20,11 +34,21 @@ page {
   /*border-bottom: 1px solid gainsboro;*/
 }
 
-.img_header image {
+#head_img {
   width: 160rpx;
   height: 160rpx;
   border-radius: 100rpx;
   margin-top: 60rpx;
+
+}
+.rz_img{
+  position: absolute;
+  margin-top: 180rpx;
+  margin-left: 50rpx;
+  width: 32rpx;
+  height: 32rpx;
+    border-radius: 15rpx;
+  background-color: white;
 }
 
 .img_header {

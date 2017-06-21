@@ -6,6 +6,8 @@
 .pingjia{
 margin-left: 30rpx;
 font-size: 35rpx;
+position: absolute;
+margin-top: -3rpx;
 color: #333;
 }
 .star1,.star2,.star3,.star4,.star5{
@@ -13,6 +15,16 @@ color: #333;
   font-size: 50rpx;
   font-weight: bold;
   color: orange;
+}
+#tip{
+  width: 150rpx;
+  margin-right: 0rpx;
+  height: 80rpx;
+  text-align: left;
+  color: #888;
+  font-size: 35rpx;
+  margin-top: -2rpx;
+  /*border: 1px solid red;*/
 }
 @import '../style/weui.wxss';
 
@@ -57,7 +69,7 @@ page{
 .tijiao{
   background-color: #5FB878;
   border: 0;
-  margin-top: 30rpx;
+  margin-top: 90rpx;
   font-size: 30rpx;
   width: 90%;
   margin-left: 5%;
