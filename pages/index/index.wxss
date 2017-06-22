@@ -245,3 +245,28 @@ page {
 .data1 {
   margin-left: 20rpx;
 }
+.service_time{
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: white;
+  margin-top: 13rpx;
+  border-bottom: 1px solid #eee;
+}
+#service_time{
+  position: absolute;
+  margin-top: 0rpx;
+}
+.end{
+  position: absolute;
+  margin-top: -100rpx;
+  margin-left: 240rpx;
+}
+.end_time{
+  margin-left: 20rpx;
+}
+.service_tip{
+  margin-left: 5rpx;
+}
+.start_time,.end_time{
+  color: #888;
+}

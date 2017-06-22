@@ -46,7 +46,7 @@ Page({
     })
   },
   share:function(){
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../share/share',
     })
   },

@@ -1,29 +1,46 @@
 <view class="main">
-  <view class="section">
+  <view class="section" style="border:1px solid #eee">
     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
       <view class="picker">
-        <text>选择职业：</text>{{array[index]}}
+        <text class="zhiye">选择职业：</text>{{array[index]}}
       </view>
     </picker>
   </view>
   <view class="num">
     <text>项目：</text>
-    <input type="text" placeholder="请输入项目名词，如：婚庆跟妆、开乳"  />
+    <input type="text" placeholder="请输入项目名词，如：婚庆跟妆、开乳" />
   </view>
   <view class="num">
     <text>数量：</text>
-    <input type="text" placeholder="请输入数量"  />
+    <input type="text" placeholder="请输入数量" />
   </view>
-    <view class="num">
+  <view class="num">
     <text>单位：</text>
-    <input type="text" placeholder="请输入单位，如：天、小时"  />
+    <input type="text" placeholder="请输入单位，如：天、小时" />
   </view>
   <view class="num">
     <text>价格：</text>
-    <input type="text" placeholder="请输入价格"  />
+    <input type="text" placeholder="请输入价格" />
   </view>
-
+  <view class="service_time">
+    <view class="section" id="service_time">
+      <picker mode="time" value="{{time3}}" start="09:01" end="21:01" bindchange="bindTimeChange3">
+        <view class="picker">
+          <text class="service_tip">服务时间</text>
+          <text class="start_time"> {{time3}}</text>
+          <text class="zhi">至</text>
+        </view>
+      </picker>
+      <picker mode="time" class="end" value="{{time4}}" start="09:01" end="21:01" bindchange="bindTimeChange4">
+        <view class="picker">
+          <text class="end_time">{{time4}}</text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <text class="service_address">服务商圈</text>
+  <textarea placeholder="请输入所服务的范围，用'、'隔开" class="textarea" placeholder-style="margin:20rpx 0 0 20rpx;font-size:25rpx;"/>
   <view class="button">
-  <button bindtap="ok">保存</button>
+    <button bindtap="ok">保存</button>
   </view>
 </view>

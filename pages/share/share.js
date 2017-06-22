@@ -176,5 +176,10 @@ Page({
         console.log("拨打电话失败！")
       }
     })
+  },
+  tousu:function(){
+    wx.navigateTo({
+      url: '../tousu/tousu',
+    })
   }
 })

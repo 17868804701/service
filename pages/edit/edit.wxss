@@ -5,7 +5,7 @@ page {
 }
 
 .picker {
-  border-bottom: 1px solid #eee;
+  /*border-bottom: 1px solid #eee;*/
   width: 100%;
   line-height: 100rpx;
   height: 100rpx;
@@ -42,9 +42,45 @@ page {
   height: 80rpx;
   background-color: #5fb878;
   color: white;
-  font-size: 40rpx;
+  font-size: 30rpx;
   line-height: 80rpx;
 }
 .button{
-  margin-top: 90rpx;
+  margin-top: 60rpx;
+}
+.service_time{
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+#service_time{
+  position: absolute;
+  margin-top: 0rpx;
+}
+.end{
+  position: absolute;
+  margin-left: 300rpx;
+  margin-top: -100rpx;
+}
+.service_tip{
+  margin-left: 20rpx;
+}
+.start_time,.end_time{
+  color: #888;
+}
+.zhi{
+  margin-left: 25rpx;
+}
+.service_address{
+  position: absolute;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  color: red;
+}
+.textarea{
+  margin-top: 80rpx;
+  margin-left: 2.5%;
+  border: 1px solid #eee;
+  width: 95%;
 }

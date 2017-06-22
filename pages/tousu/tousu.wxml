@@ -1,0 +1,20 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <navigator url="{{item.link}}" hover-class="navigator-hover">
+        <image src="{{item.url}}" class="slide-image" width="355" height="150" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="list">
+  <image src="../img/lb.png"></image>
+  <text class="tip">对我们有什么不满，可以在这里为我们反馈</text>
+</view>
+<view class="call" bindtap="call">
+<image src="../img/call.png"></image>
+</view>
+<text class="service_line">服务热线:029-88286789</text>
+<textarea placeholder="请输入你要反馈的内容" class="tousuContent" placeholder-style="font-size:25rpx;color:#888;"/>
+
+<button>立即反馈</button>

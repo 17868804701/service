@@ -42,10 +42,14 @@
     <text class="profession_name">针灸推拿</text>
     <!--<image src="../img/more.png" class="more" catchtap="show_edit"></image>-->
     <text class="profession_type">家政服务|357.9元</text>
-    <text class="profession_num">累计2536单</text>
-    <text class="profession_add">地址：西安欧亚学院</text>
+    <text class="profession_num">服务时间：08：00-20：00</text>
+    <text class="profession_add">工作时间1天</text>
     <view class="profession_edit">
       <button bindtap="buy">购买</button>
+    </view>
+        <view class="line"></view>
+    <view class="service_address">
+    <text class="service_address_info">服务商圈：北山门、大明宫、欧亚学院、电子正街北山门、大明宫、欧亚学院、电子正街北山门</text>
     </view>
   </view>
   <!--<view class="add">
@@ -136,7 +140,7 @@
  <image src="../img/aa.png" id="call"></image>
 
   </view>
-   <view class="tousu">
+   <view class="tousu" bindtap="tousu">
  <image src="../img/tousu.png" id="call"></image>
 
   </view>

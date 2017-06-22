@@ -1,0 +1,83 @@
+/* pages/tousu/tousu.wxss */
+.slide-image {
+  width: 100%;
+}
+.title {
+  border-radius: 00rpx 00rpx 0 0;
+  height: 80rpx;
+  width: 100%;
+  color: #333;
+  text-align: center;
+  background-color: #e0e0e0;
+  line-height: 80rpx;
+}
+
+.list {
+  width: 100%;
+  height: 80rpx;
+  background-color: white;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #eee;
+  font-size: 25rpx;
+}
+.buy{
+ float: right;
+ color: red;
+ margin-right: 30rpx;
+ }
+
+.tip {
+  position: absolute;
+  margin-left: 70rpx;
+  color: #333;
+}
+.service_list{
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 0;
+}
+.list image {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+}
+.tousuContent{
+  border: 1px solid #eee;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 160rpx;
+}
+button{
+  background-color: #5FB878;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  width: 90%;
+  margin-left: 5%;
+  color: white;
+  margin-top: 40rpx;
+}
+.service_line{
+  margin-left: 140rpx;
+  margin-top: 70rpx;
+  position: absolute;
+  font-size: 30rpx;
+  color: #888;
+}
+.call{
+  position: absolute;
+  background-color:  #5FB878;
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  border-radius:40rpx; 
+}
+.call image{
+  width: 60rpx;
+  margin-left: 13rpx;
+  margin-top: 10rpx;
+  height: 60rpx;
+}

@@ -29,7 +29,7 @@
   </view>
   <view class="list">
     <text class="tittle">联系人地址</text>
-    <text class="tip"></text>
+    <text class="tip">(*必填)</text>
   </view>
   <input type="text" placeholder="填写联系人地址" placeholder-style="font-size:30rpx;" />
     <view class="list">
