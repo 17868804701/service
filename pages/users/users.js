@@ -1,4 +1,3 @@
-
 Page({
   data: {
     selected: true,
@@ -97,12 +96,24 @@ Page({
       }
     })
   },
-  my_info: function () {
+  my_info: function () {  
     wx.navigateTo({
       url: '../my_info/my_info',
     })
   },
   onLoad: function () {
+    var that = this
+    wx.chooseVideo({
+      sourceType: ['album', 'camera'],
+      maxDuration: 60,
+      camera: 'back',
+      success: function (res) {
+        that.setData({
+          src: res.tempFilePath
+        })
+        console.log(res.tempFilePath)
+      }
+    })
     this.setData({
       zan_num: parseInt(this.data.zan_num)+1
     })

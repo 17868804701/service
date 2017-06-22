@@ -6,7 +6,8 @@ Page({
     hidden: false,
     show: 'none',
     zan_url: '../img/xihuanshi.png',
-    zan_num: '109'
+    zan_num: '109',
+    show_metoo:''
   },
   selected: function (e) {
     this.setData({
@@ -68,6 +69,11 @@ Page({
       url: '../add/add',
     })
   },
+  users:function(){
+    wx.switchTab({
+      url: '../users/users',
+    })
+  },
   del: function () {
     var that = this;
     wx.showModal({
@@ -97,7 +103,8 @@ Page({
     console.log(pingjia)
     if(pingjia=='pingjia'){
        this.setData({
-         show:''
+         show:'',
+         show_metoo:'none'
        })
     }
     this.setData({

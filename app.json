@@ -1,15 +1,15 @@
 {
   "pages": [
     "pages/users/users",
+    "pages/video/video",
+    "pages/share/share",
     "pages/tousu/tousu",
     "pages/add/add",
     "pages/edit/edit",
     "pages/index/index",  
     "pages/buyInfo/buyInfo",
     "pages/pingjia/pingjia",
-    "pages/share/share",
     "pages/renwu/renwu",
-    "pages/index1/index1",
     "pages/renwuinfo/renwuinfo",
     "pages/uploadCard/uploadCard",
     "pages/my_info/my_info"

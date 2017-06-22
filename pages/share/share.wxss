@@ -548,3 +548,25 @@ s
   margin-left: 20rpx;
   color: white;
 }
+.metoo image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 5rpx;
+  margin-top: 5rpx;
+}
+#me{
+  border-radius:30rpx; 
+  background-color: #5fb878;
+  width: 250rpx;
+  height: 70rpx;
+  position: fixed;
+  margin-left: 64%;
+  bottom: 20rpx;
+}
+.metoo_tip{
+  position: absolute;
+  margin-left: 65rpx;
+  margin-top: -47rpx;
+  color: white;
+  font-size: 25rpx;
+}

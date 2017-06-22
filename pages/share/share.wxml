@@ -10,14 +10,6 @@
     <text class="star">星级评价：★★★★★</text>
   </view>
   <view class="edit">
-    <!--<view bindtap="index">
-      <image src="../img/edit.png" class="edit_img"></image>
-      <text>编辑资料</text>
-    </view>-->
-      <!--<view bindtap="index">
-      <image src="../img/eyes.png" class="edit_img"></image>
-      <text>预览分享</text>
-    </view>-->
   </view>
 
 </view>
@@ -39,7 +31,7 @@
 <view class="{{selected?'show':'hidden'}}">
   <view class="profession" bindtap="hidden_edit" bindtap="hidden_edit">
     <image src="../img/head.jpg" class="profession_img"></image>
-    <text class="profession_name">针灸推拿</text>
+    <text class="profession_name">跟妆师，化妆师</text>
     <!--<image src="../img/more.png" class="more" catchtap="show_edit"></image>-->
     <text class="profession_type">家政服务|357.9元</text>
     <text class="profession_num">服务时间：08：00-20：00</text>
@@ -134,14 +126,18 @@
 <view class="footer" style="display:{{show}}">
   <view class="call" bindtap="call">
   <image src="../img/call.png" id="call"></image>
-
   </view>
   <view class="pingjia" bindtap="pingjia">
  <image src="../img/aa.png" id="call"></image>
-
   </view>
    <view class="tousu" bindtap="tousu">
  <image src="../img/tousu.png" id="call"></image>
-
   </view>
+</view>
+
+<view id="me" bindtap="users" style="display:{{show_metoo}}">
+  <view class="metoo">
+  <image src="../img/metoo.png"></image>
+  </view>
+  <text class="metoo_tip">我要成为手艺人</text>
 </view>

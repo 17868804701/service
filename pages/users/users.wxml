@@ -39,7 +39,7 @@
 <view class="{{selected?'show':'hidden'}}">
   <view class="profession" bindtap="hidden_edit" bindtap="hidden_edit">
     <image src="../img/head.jpg" class="profession_img"></image>
-    <text class="profession_name">针灸推拿</text>
+    <text class="profession_name">跟妆师、化妆师</text>
     <image src="../img/more.png" class="more" catchtap="show_edit"></image>
     <text class="profession_type">家政服务|357.9元</text>
     <text class="profession_num">服务时间：08：00-20：00</text>
@@ -56,7 +56,7 @@
   </view>
     <view class="profession" bindtap="hidden_edit" bindtap="hidden_edit">
     <image src="../img/head.jpg" class="profession_img"></image>
-    <text class="profession_name">针灸推拿</text>
+    <text class="profession_name">跟妆师、化妆师</text>
     <image src="../img/more.png" class="more" catchtap="show_edit"></image>
     <text class="profession_type">家政服务|357.9元</text>
     <text class="profession_num">服务时间：08：00-20：00</text>
@@ -77,17 +77,9 @@
 </view>
 <view class="{{selected1?'show':'hidden'}}">
   <view id="header">
-    <!--<text class="title">家庭保洁</text>
-    <text class="price">550元/小时</text>
-    <text class="num">累计2344单</text>-->
   </view>
-  <!--<view class="list">
-    <text class="assess">评价(1562)</text>
-    <text class="assess_star">★★★★★(5.0)</text>
-  </view>-->
   <view class="main">
     <view class="content">
-
 
       <view class="content_list">
         <view class="img">

@@ -8,6 +8,7 @@ page {
   width: 40rpx;
   height: 40rpx;
   margin-left: 23%;
+  /*margin-left: 30%;*/
   margin-top: 64rpx;
   position: absolute;
 }
@@ -16,6 +17,7 @@ page {
   height: 50rpx;
   margin-left: 29%;
   color: #888;
+  /*margin-top: 100rpx;*/
   margin-top: 65rpx;
   position: absolute;
 }

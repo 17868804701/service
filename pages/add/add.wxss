@@ -84,6 +84,3 @@ page {
   border: 1px solid #eee;
   width: 95%;
 }
-.end_time{
-  margin-left: -55rpx;
-}

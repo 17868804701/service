@@ -24,8 +24,8 @@
   </view>
 </view>
 <view class="age">
-  <text>地址</text>
-  <input type="number" class="age_input" placeholder="请输入地址"/>
+  <text>城市</text>
+  <input type="text" class="age_input" placeholder="请输入所在的城市"/>
 </view>
 <view class="renzheng" bindtap="uploadCard">
   <text class="title">实名认证</text>
