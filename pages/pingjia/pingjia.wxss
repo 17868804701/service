@@ -1,31 +1,3 @@
-.header{
-  height: 100rpx;
-  widows: 100%;
-  line-height: 100rpx;
-}
-.pingjia{
-margin-left: 30rpx;
-font-size: 35rpx;
-position: absolute;
-margin-top: -3rpx;
-color: #333;
-}
-.star1,.star2,.star3,.star4,.star5{
-  float: right;
-  font-size: 50rpx;
-  font-weight: bold;
-  color: orange;
-}
-#tip{
-  width: 150rpx;
-  margin-right: 0rpx;
-  height: 80rpx;
-  text-align: left;
-  color: #888;
-  font-size: 35rpx;
-  margin-top: -2rpx;
-  /*border: 1px solid red;*/
-}
 @import '../style/weui.wxss';
 
 page{
@@ -76,4 +48,57 @@ page{
   color: white;
   height: 80rpx;
   line-height: 80rpx;
+}
+.tab{
+  width: 100%;
+  border: 0px solid #eee;
+  height: 180rpx;
+}
+.tab_list{
+background-color:#5FB878;
+width: 19%;
+color: white;
+font-size: 25rpx;
+margin-left: 1%;
+margin-top: 20rpx;
+float: left;
+line-height: 50rpx;
+text-align: center;
+height: 50rpx;
+border-radius: 30rpx;
+border: 0px solid #5FB878;
+}
+
+
+#header{
+  height: 100rpx;
+  widows: 100%;
+  line-height: 100rpx;
+}
+.pingjia{
+margin-left: 30rpx;
+font-size: 35rpx;
+position: absolute;
+color: #333;
+}
+/*.star1,.star2,.star3,.star4,.star5{
+  float: right;
+  font-size: 50rpx;
+  font-weight: bold;
+  color: orange;
+}*/
+#tip{
+font-size: 35rpx;
+color: #888;
+}
+#star{
+  position: absolute;
+  margin-left: 55%;
+  font-size: 40rpx;
+  height: 60rpx;
+  margin-top: 0rpx;
+  color: orange;
+  /*margin-top: -2rpx;*/
+  /*margin-left: 80rpx;*/
+  border: 0px solid red;
 }

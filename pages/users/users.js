@@ -102,18 +102,6 @@ Page({
     })
   },
   onLoad: function () {
-    var that = this
-    wx.chooseVideo({
-      sourceType: ['album', 'camera'],
-      maxDuration: 60,
-      camera: 'back',
-      success: function (res) {
-        that.setData({
-          src: res.tempFilePath
-        })
-        console.log(res.tempFilePath)
-      }
-    })
     this.setData({
       zan_num: parseInt(this.data.zan_num)+1
     })

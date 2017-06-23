@@ -1,4 +1,5 @@
 // pages/index/index.js
+
 Page({
   /**
    * 页面的初始数据
@@ -8,7 +9,7 @@ Page({
     date: '1980-09-01',
     date1: '1980-09-01',
     time: '12:01',
-
+    showTel:''
   },
 
   /**
@@ -17,6 +18,11 @@ Page({
   onLoad: function (options) {
     var sex = options.sex;
     var nickName = options.nickName
+    var tip = options.tip;
+  
+    this.setData({
+      tip: tip
+    })
     if (sex == '男') {
       this.setData({
         checked: true
@@ -115,6 +121,12 @@ Page({
     wx.showToast({
       title: '保存成功',
     })
+    
+    if(this.data.tip =='wycwsyr'){
+      wx.switchTab({
+        url: '../users/users',
+      })
+    }
   },
   bindDateChange: function (e) {
     this.setData({

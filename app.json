@@ -1,21 +1,23 @@
 {
   "pages": [
     "pages/users/users",
-    "pages/video/video",
+    "pages/pingjiaList/pingjiaList",
+    "pages/pingjia/pingjia",
     "pages/share/share",
+    "pages/uploadCard/uploadCard",
+    "pages/video/video",
     "pages/tousu/tousu",
     "pages/add/add",
     "pages/edit/edit",
     "pages/index/index",  
     "pages/buyInfo/buyInfo",
-    "pages/pingjia/pingjia",
     "pages/renwu/renwu",
     "pages/renwuinfo/renwuinfo",
-    "pages/uploadCard/uploadCard",
     "pages/my_info/my_info"
   ],
   "window": {},
   "tabBar": {
+
     "selectedColor": "#5FB878",
     "borderStyle": "black",
     "list": [

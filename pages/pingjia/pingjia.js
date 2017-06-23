@@ -11,7 +11,9 @@ Page({
     star3: '★',
     star4: '★',
     star5: '★',
-    str:'非常好'
+    str:'非常好',
+    tab:['非常好','很好','不错','一般','很一般','普通'],
+    content:''
   
   },
 
@@ -169,5 +171,12 @@ Page({
       star5: '★',
       str:'非常好'
     })
+  },
+  tab:function(e){
+    var item = e.currentTarget.dataset.item;
+    this.setData({
+      content:this.data.content+item+'、'
+    })
+
   }
 })

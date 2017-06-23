@@ -8,7 +8,8 @@
     <text class="nickName">{{nickName}}<text class="sex" wx:if="{{gender=='男'}}">♀</text><text class="sex_nv" wx:if="{{gender=='女'}}">♂</text>
     </text>
     <text class="num">累计35465单</text>
-    <text class="star">星级评价：★★★★★</text>
+    <!--<text class="star">星级评价：★★★★★</text>-->
+    <text class="star">普通会员</text>
   </view>
   <view class="edit">
     <view bindtap="index">
@@ -80,7 +81,6 @@
   </view>
   <view class="main">
     <view class="content">
-
       <view class="content_list">
         <view class="img">
           <image src="../img/head.jpg" class="head_img"></image>
@@ -95,6 +95,14 @@
           <image src="../img/head.jpg"></image>
           <image src="../img/head.jpg"></image>
           <image src="../img/head.jpg"></image>
+        </view>
+        <view class="pinglun">
+          <view class="z">
+            <image src="../img/z.png"></image><text>102</text>
+          </view>
+          <view class="x">
+            <image src="../img/x.png"></image><text>102</text>
+          </view>
         </view>
       </view>
 
@@ -127,7 +135,6 @@
           <image src="../img/head.jpg"></image>
         </view>
       </view>
-
     </view>
   </view>
 </view>

@@ -121,12 +121,16 @@ page {
 
 .info .star {
   position: absolute;
-  margin-top: 130rpx;
+  margin-top: 165rpx;
   font-size: 30rpx;
   color: orange;
   font-weight: bold;
 }
-
+.tel{
+  margin-top: 125rpx;
+  font-size: 25rpx;
+  color: #888;
+}
 /*顶部tab*/
 
 .nav {
@@ -362,7 +366,7 @@ page {
   position: absolute;
   margin-left: 30rpx;
   margin-top: 70rpx;
-}s
+}
 
 #header .num {
   float: right;
@@ -370,7 +374,6 @@ page {
   margin-right: 20rpx;
   color: #888;
 }
-s
 .list {
   height: 100rpx;
   width: 100%;
@@ -561,6 +564,15 @@ s
   height: 70rpx;
   position: fixed;
   margin-left: 64%;
+  bottom: 20rpx;
+}
+#me_call{
+  border-radius:35rpx; 
+  background-color: #5fb878;
+  width: 70rpx;
+  height: 70rpx;
+  position: fixed;
+  margin-left: 52%;
   bottom: 20rpx;
 }
 .metoo_tip{

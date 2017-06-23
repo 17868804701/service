@@ -39,9 +39,14 @@
         从业时间 <text class="cysj">{{date}}</text>
       </view>
     </picker>
-  </view>
+  </view>   
 </view>
 <view class="my">
+  <text class="my_info">是否公开手机号</text>
+  <switch type="switch" checked="{{showTel}}" bindchange="showTel" style="float:right" />
+</view>
+<view class="my">
+
   <text class="my_info">是否接单</text>
   <switch type="switch" checked="true" bindchange="listenerSwitch" style="float:right" />
 </view>

@@ -7,7 +7,9 @@ Page({
     show: 'none',
     zan_url: '../img/xihuanshi.png',
     zan_num: '109',
-    show_metoo:''
+    show_metoo:'',
+    status:'预约',
+    showTel:''
   },
   selected: function (e) {
     this.setData({
@@ -70,8 +72,19 @@ Page({
     })
   },
   users:function(){
-    wx.switchTab({
-      url: '../users/users',
+    var that = this;
+    wx.showModal({
+      title: '手艺人',
+      content: '你确定要成为手艺人吗,前去完善资料？',
+      success: function (res) {
+        if (res.confirm) {
+          wx.navigateTo({
+            url: '../index/index?tip=wycwsyr',
+          })
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
     })
   },
   del: function () {
@@ -104,7 +117,8 @@ Page({
     if(pingjia=='pingjia'){
        this.setData({
          show:'',
-         show_metoo:'none'
+         show_metoo:'none',
+         status:'购买'
        })
     }
     this.setData({
@@ -165,7 +179,7 @@ Page({
   },
   pingjia:function(){
     wx.navigateTo({
-      url: '../pingjia/pingjia',
+      url: '../pingjiaList/pingjiaList',
     })
   },
   uploadCard: function () {

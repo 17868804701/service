@@ -1,0 +1,33 @@
+<view class="list">
+  <view class="profession" bindtap="hidden_edit" bindtap="hidden_edit">
+    <image src="../img/head.jpg" class="profession_img"></image>
+    <text class="profession_name">跟妆师、化妆师</text>
+    <text class="profession_type">家政服务|357.9元</text>
+    <text class="profession_num">服务时间：08：00-20：00</text>
+    <text class="profession_add">工作时间1天</text>
+    <view class="line"></view>
+    <view class="service_address">
+    <text class="service_address_info">服务商圈：北山门、大明宫、欧亚学院、电子正街北山门、大明宫、欧亚学院、电子正街北山门</text>
+    </view>
+    <view class="pingjia">
+    <text class="status">交易完成</text>
+    <button bindtap="pingjia">评价</button>
+    </view>
+  </view>
+
+    <view class="profession" bindtap="hidden_edit" bindtap="hidden_edit">
+    <image src="../img/head.jpg" class="profession_img"></image>
+    <text class="profession_name">跟妆师、化妆师</text>
+    <text class="profession_type">家政服务|357.9元</text>
+    <text class="profession_num">服务时间：08：00-20：00</text>
+    <text class="profession_add">工作时间1天</text>
+    <view class="line"></view>
+    <view class="service_address">
+    <text class="service_address_info">服务商圈：北山门、大明宫、欧亚学院、电子正街北山门、大明宫、欧亚学院、电子正街北山门</text>
+    </view>
+    <view class="pingjia">
+    <text class="status">交易完成</text>
+    <button bindtap="pingjia">评价</button>
+    </view>
+  </view>
+</view>

@@ -7,11 +7,12 @@
   <view class="info">
     <text class="nickName">{{nickName}}<text class="sex" wx:if="{{gender=='男'}}">♀</text><text class="sex_nv" wx:if="{{gender=='女'}}">♂</text></text>
     <text class="num">累计35465单</text>
-    <text class="star">星级评价：★★★★★</text>
+    <!--<text class="star">星级评价：★★★★★</text>-->
+    <text class="star">普通会员</text>
+    <text class="tel" style="display:{{showTel}}">17868804701</text>
   </view>
   <view class="edit">
   </view>
-
 </view>
 <view class="body">
   <view class="nav bc_white">
@@ -37,7 +38,7 @@
     <text class="profession_num">服务时间：08：00-20：00</text>
     <text class="profession_add">工作时间1天</text>
     <view class="profession_edit">
-      <button bindtap="buy">购买</button>
+      <button bindtap="buy">{{status}}</button>
     </view>
         <view class="line"></view>
     <view class="service_address">
@@ -140,4 +141,10 @@
   <image src="../img/metoo.png"></image>
   </view>
   <text class="metoo_tip">我要成为手艺人</text>
+</view>
+
+<view id="me_call" bindtap="call" style="display:{{show_metoo}}">
+  <view class="metoo">
+  <image src="../img/call.png"></image>
+  </view>
 </view>
