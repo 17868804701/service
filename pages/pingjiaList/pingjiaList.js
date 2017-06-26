@@ -67,5 +67,10 @@ Page({
     wx.navigateTo({
       url: '../pingjia/pingjia',
     })
+  },
+  tousu:function(){
+    wx.navigateTo({
+      url: '../tousu/tousu',
+    })
   }
 })

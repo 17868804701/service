@@ -43,6 +43,7 @@ page {
 .name text {
   position: absolute;
   margin-top: -8rpx;
+  margin-left: -5rpx;
 }
 
 .sex {
@@ -64,6 +65,7 @@ page {
 .sex_title {
   position: absolute;
   margin-top: 12rpx;
+  margin-left: -5rpx;
 }
 
 .img image {
@@ -94,7 +96,7 @@ page {
   border-top: 1rpx solid whitesmoke;
 }
 .age text{
-  margin-left: 20rpx;
+  margin-left: 15rpx;
 }
 .age_input{
   position: absolute;
@@ -105,7 +107,15 @@ page {
   height: 80rpx;
   line-height: 80rpx;
 }
-
+.tel_input{
+  position: absolute;
+  margin-top: -89rpx;
+  margin-left: 135rpx;
+  width: 70%;
+  border: 0px solid whitesmoke;
+  height: 80rpx;
+  line-height: 80rpx;
+}
 .worrktime {
   width: 100%;
   height: 100rpx;

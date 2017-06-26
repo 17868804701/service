@@ -81,24 +81,14 @@ Page({
       content: '确定要购买此服务吗？',
       success: function (res) {
         if (res.confirm) {
-          wx.showModal({
-            title: '购买服务',
-            content: '确认支付242.6元？',
-            success: function (res) {
-              if (res.confirm) {
-                wx.showToast({
-                  title: '支付成功',
-                })
-                wx.redirectTo({
-                  url: '../share/share?pingjia=pingjia',
-                })
-                that.setData({
-                  show: ''
-                })
-              } else if (res.cancel) {
-                console.log('用户点击取消')
-              }
-            }
+          wx.showToast({
+            title: '支付成功',
+          })
+          wx.redirectTo({
+            url: '../share/share?pingjia=pingjia',
+          })
+          that.setData({
+            show: ''
           })
         } else if (res.cancel) {
           console.log('用户点击取消')

@@ -1,4 +1,27 @@
 /* pages/users/users.wxss */
+.head{
+  border-top: 1px solid whitesmoke;
+  height: 120rpx;
+  margin-top: 60rpx;
+  border-radius: 0 0 20rpx 20rpx;
+
+}
+.head_item{
+  /*border: 1px solid #5fb878;*/
+  height: 60rpx;
+  width: 32%;
+  float: left;
+  margin-left: 0.5%;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+.head_item image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 10rpx;
+}
+
 
 page {
   background-color: white;
@@ -71,8 +94,10 @@ page {
 }
 
 .edit {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  margin-left: 61%;
+  /*display: flex;
+  justify-content: center;*/
 }
 
 .edit view {
@@ -84,8 +109,7 @@ page {
   background-color: white;
   color: #5fb878;
   border-radius: 3px;
-  margin-left: 10rpx;
-  margin-top: -20rpx;
+  margin-top: 30rpx;
 }
 
 .edit text {
@@ -105,7 +129,7 @@ page {
   display: flex;
   justify-content: center;
   border: 0px solid red;
-  height: 200rpx;
+  height: 70rpx;
 }
 
 .info .nickName {
@@ -577,4 +601,11 @@ position: absolute;
 color: #888;
 margin-left: 45rpx;
 margin-top: 15rpx;
+}
+.server_name{
+  position: absolute;
+  color: #888;
+  font-size: 25rpx;
+  margin-top: -35rpx;
+  margin-left: 290rpx;
 }

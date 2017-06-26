@@ -86,3 +86,15 @@ page{
   color: #5FB878;
   background-color:white;
 }
+.touosu{
+    float: right;
+  margin-right: 80rpx;
+  width: 100rpx;
+  line-height: 50rpx;
+  height: 50rpx;
+  font-size: 20rpx;
+  border-radius: 30rpx;
+  border: 1px solid #5FB878;
+  color: #5FB878;
+  background-color:white;
+}

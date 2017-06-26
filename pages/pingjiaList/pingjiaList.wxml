@@ -11,7 +11,8 @@
     </view>
     <view class="pingjia">
     <text class="status">交易完成</text>
-    <button bindtap="pingjia">评价</button>
+    <button bindtap="tousu">投诉</button>
+      <button bindtap="pingjia">评价</button>
     </view>
   </view>
 
@@ -27,7 +28,9 @@
     </view>
     <view class="pingjia">
     <text class="status">交易完成</text>
+        <button bindtap="tousu">投诉</button>
     <button bindtap="pingjia">评价</button>
+
     </view>
   </view>
 </view>

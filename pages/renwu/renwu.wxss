@@ -61,3 +61,10 @@ page {
   border: 0px solid #5fb878;
   background-color: #5fb878;
 }
+.status{
+  color: red;
+  font-size: 20rpx;
+  position: absolute;
+  margin-left: 85%;
+  margin-top: 150rpx;
+}

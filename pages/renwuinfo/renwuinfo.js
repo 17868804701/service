@@ -26,15 +26,11 @@ Page({
     var that =this; 
     wx.showModal({
       title: '查看',
-      content: '你还没有下单付费，不能查看，立即下单',
+      content: '确定要查看联系方式嘛',
       success: function (res) {
-        if (res.confirm) {
-          that.setData({
-            tel:'17868804701'
-          })
-        } else if (res.cancel) {
-          console.log('用户点击取消')
-        }
+        that.setData({
+          tel: '17868804701'
+        })
       }
     })
   }

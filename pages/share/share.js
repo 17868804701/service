@@ -87,25 +87,6 @@ Page({
       }
     })
   },
-  del: function () {
-    var that = this;
-    wx.showModal({
-      title: '删除',
-      content: '确定要删除吗？',
-      success: function (res) {
-        if (res.confirm) {
-          wx.showToast({
-            title: '删除成功',
-          })
-          that.setData({
-            show: 'none'
-          })
-        } else if (res.cancel) {
-          console.log('用户点击取消')
-        }
-      }
-    })
-  },
   mySelf: function () {
     wx.navigateTo({
       url: '../my_info/my_info',
@@ -118,7 +99,7 @@ Page({
        this.setData({
          show:'',
          show_metoo:'none',
-         status:'购买'
+         status:'处理中'
        })
     }
     this.setData({
@@ -173,7 +154,7 @@ Page({
     }
   },
   buy:function(){
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../buyInfo/buyInfo',
     })
   },

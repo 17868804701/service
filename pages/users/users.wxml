@@ -1,17 +1,6 @@
 <view class="header">
- <image src="{{zan_url}}" class="zan" bindtap="zan"></image><text class="zan_num">{{zan_num}}</text>
-  <view class="img_header">
-    <image src="{{avatarUrl}}" id="head_img"></image>
-    <image src="../img/hvz.png" class="rz_img" bindtap="uploadCard"></image>
-  </view>
-  <view class="info">
-    <text class="nickName">{{nickName}}<text class="sex" wx:if="{{gender=='男'}}">♀</text><text class="sex_nv" wx:if="{{gender=='女'}}">♂</text>
-    </text>
-    <text class="num">累计35465单</text>
-    <!--<text class="star">星级评价：★★★★★</text>-->
-    <text class="star">普通会员</text>
-  </view>
-  <view class="edit">
+ <!--<image src="{{zan_url}}" class="zan" bindtap="zan"></image><text class="zan_num">{{zan_num}}</text>-->
+   <view class="edit">
     <view bindtap="index">
       <image src="../img/edit.png" class="edit_img"></image>
       <text>编辑资料</text>
@@ -21,7 +10,35 @@
       <text>预览分享</text>
     </view>
   </view>
+  <view class="img_header">
+    <image src="{{avatarUrl}}" id="head_img"></image>
+    <image src="../img/hvz.png" class="rz_img" bindtap="uploadCard"></image>
+  </view>
+  <view class="info">
+    <text class="nickName">{{nickName}}<text class="sex" wx:if="{{gender=='男'}}">♂</text><text class="sex_nv" wx:if="{{gender=='女'}}">♀</text>
+    </text>
+    <!--<text class="num">累计35465单</text>-->
+    <!--<text class="star">星级评价：★★★★★</text>-->
+    <!--<text class="star">普通会员</text>-->
+  </view>
+  <view class="head">
+  <view class="head_item"><image src="{{zan_url}}"></image></view>
+  <view class="head_item"><image src="../img/vip1.png"></image></view>
+  <view class="head_item"><image src="../img/dd.png"></image></view>
+  <view class="head_item">人气：201</view>
+  <view class="head_item">普通会员</view>
+  <view class="head_item">订单：256</view>
+  </view>
 </view>
+
+
+
+
+
+
+
+
+
 <view class="body">
   <view class="nav bc_white">
     <view class="{{selected?'red':'default'}} title" bindtap="selected">
@@ -88,6 +105,7 @@
         <text class="user">不要*****一样</text>
         <text class="time">2016-09-09</text>
         <text class="star">★★★★★</text>
+        <text class="server_name">服务项目</text>
         <view class="assess_content">大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。大家都对他评价不错，他似乎是个好人。</view>
         <view class="img_list">
           <image src="../img/head.jpg"></image>

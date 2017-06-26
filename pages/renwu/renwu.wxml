@@ -1,26 +1,29 @@
 <view class="main">
   <view class="list" bindtap="renwuinfo">
     <image src="../img/head.jpg"></image>
-    <button class="type" catchtap="ljqd">立即抢单</button>
+    <button class="type" catchtap="ljqd">接单</button>
     <text class="name">开乳师,上门服务，服务周到</text>
     <text class="price">预算：556元/小时</text>
     <text class="time">时间：08:00-21:00</text>
+    <!--<text class="status">新订单</text>-->
     <text class="address">工作地点：西安欧亚学院</text>
   </view>
   <view class="list" bindtap="renwuinfo">
     <image src="../img/head.jpg"></image>
-    <button class="type" catchtap="ljqd">立即抢单</button>
+    <button class="type" catchtap="ljqd">执行中</button>
     <text class="name">开乳师,上门服务，服务周到</text>
     <text class="price">预算：556元/小时</text>
     <text class="time">时间：08:00-21:00</text>
+        <!--<text class="status">执行中</text>-->
     <text class="address">工作地点：西安欧亚学院</text>
   </view>
   <view class="list" bindtap="renwuinfo">
     <image src="../img/head.jpg"></image>
-    <button class="type" catchtap="ljqd">极速下单</button>
+    <button class="type" catchtap="ljqd">已完成</button>
     <text class="name">开乳师,上门服务，服务周到</text>
     <text class="price">预算：556元/小时</text>
     <text class="time">时间：08:00-21:00</text>
+        <!--<text class="status">已完成</text>-->
     <text class="address">工作地点：西安欧亚学院</text>
   </view>
 </view>

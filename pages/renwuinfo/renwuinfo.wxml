@@ -1,4 +1,4 @@
-<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+<!--<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}">
     <swiper-item>
       <navigator url="{{item.link}}" hover-class="navigator-hover">
@@ -10,18 +10,16 @@
 <view class="list">
   <image src="../img/lb.png"></image>
   <text class="tip">家政服务，上门服务</text>
-  <!--<text class="buy">立即购买</text>-->
-</view>
+</view>-->
 
 <view class="service_content">
   <view class="title">服务详情</view>
-
   <view class="service_list">
     <view class="item">
-      <text>服务时间</text>
+      <text>姓名</text>
     </view>
     <view class="item">
-      <text>8:00-21:00</text>
+      <text>张三</text>
     </view>
   </view>
   <view class="service_list">
@@ -34,37 +32,19 @@
   </view>
     <view class="service_list">
     <view class="item">
-      <text>服务类型</text>
+      <text>预约时间</text>
     </view>
     <view class="item">
-      <text>家政服务</text>
-    </view>
-  </view>
-
-   <view class="service_list">
-    <view class="item">
-      <text>服务数量</text>
-    </view>
-    <view class="item">
-      <text>一天</text>
+      <text>2017-10-13 13:25</text>
     </view>
   </view>
 
    <view class="service_list">
     <view class="item">
-      <text>服务商圈</text>
+      <text>备注</text>
     </view>
     <view class="item">
-      <text>北山门，电子正街</text>
-    </view>
-  </view>
-
-  <view class="service_list">
-    <view class="item">
-      <text>催乳师、按摩师</text>
-    </view>
-    <view class="item">
-      <text>价格：¥80.0</text>
+      <text>这里是你的备注</text>
     </view>
   </view>
 
@@ -75,5 +55,5 @@
   <text class="show_tel" bindtap="showTel">查看</text>
 </view>
 <view class="button">
-  <button class="qiangdan">立即抢单</button>
+<button class="qiangdan">接单</button>
 </view>
